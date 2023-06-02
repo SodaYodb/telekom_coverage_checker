@@ -1,6 +1,7 @@
 # Telekom Coverage Checker
 
 This script allows you to check the maximum internet connection speed provided by Telekom for a given address. It utilizes the Telekom Coverage Checker API to retrieve the information.
+I would recommend to add a small delay to the queries to not stress the telecom server too much.
 
 ## Prerequisites
 
@@ -25,6 +26,7 @@ To use the script, provide the following details in the `sample` list:
 - State (`IN_STATE`)
 
 For addresses in Germany, the state does not have to be specified. For other countries I have not tested this.
+
 
 For example, to check the coverage for the address "Alter Markt 6, 39104, Magdeburg, Sachsen-Anhalt", use the `sample` list:
 
