@@ -1,6 +1,6 @@
 import requests
 
-sample = ["39104", "Magdeburg", "Alter Markt", "Sachsen-Anhalt"]
+sample = ["39104", "Magdeburg", "Alter Markt 6", "Sachsen-Anhalt"]
 
 def request_telekom(IN_PLZ, IN_CITY, IN_STREET, IN_STATE):
     r1 = requests.get(
@@ -15,10 +15,10 @@ def request_telekom(IN_PLZ, IN_CITY, IN_STREET, IN_STATE):
     json_resp2 = r2.json()
     if json_resp2["maxSpeed"]['available']:
         # Kbits/s Mbit/s delete "/1000" for Kbit/s
-        data_to_save = (str(int(json_resp2["maxSpeed"]['available'] / 1000)))
+        connection_speed = (str(int(json_resp2["maxSpeed"]['available'] / 1000)))
     else:
         # it could be there is no internet connection
-        data_to_save = ("NO DATA")
-    return data_to_save
+        connection_speed = ("NO DATA")
+    return connection_speed
 
 print(request_telekom(sample[0], sample[1], sample[2], sample[3]))
