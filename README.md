@@ -1,7 +1,7 @@
 # Telekom Coverage Checker
 
 This script allows you to check the maximum internet connection speed provided by Telekom for a given address. It utilizes the Telekom Coverage Checker API to retrieve the information.
-I would recommend to add a small delay to the queries to not stress the telecom server too much.
+I would recommend to add a small delay to the queries to not stress the Telekom server too much.
 
 ## Prerequisites
 
