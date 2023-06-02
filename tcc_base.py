@@ -21,4 +21,4 @@ def request_telekom(IN_PLZ, IN_CITY, IN_STREET, IN_STATE):
         connection_speed = ("NO DATA")
     return connection_speed
 
-print(request_telekom(sample[0], sample[1], sample[2], sample[3]))
+print(request_telekom(*sample))
