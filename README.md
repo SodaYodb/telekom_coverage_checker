@@ -37,7 +37,7 @@ sample = ["39104", "Magdeburg", "Alter Markt 6", "Sachsen-Anhalt"]
 Then, execute the script and it will output the maximum internet connection speed available for the provided address.
 
 ```python
-print(request_telekom(sample[0], sample[1], sample[2], sample[3]))
+print(request_telekom(*sample))
 ```
 
 The result will be displayed in megabits per second (Mbps).
