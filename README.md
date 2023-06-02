@@ -24,6 +24,8 @@ To use the script, provide the following details in the `sample` list:
 - Street (`IN_STREET`)
 - State (`IN_STATE`)
 
+For addresses in Germany, the state does not have to be specified. For other countries I have not tested this.
+
 For example, to check the coverage for the address "Alter Markt 6, 39104, Magdeburg, Sachsen-Anhalt", use the `sample` list:
 
 ```python
